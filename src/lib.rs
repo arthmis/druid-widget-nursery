@@ -15,6 +15,7 @@
 //! A collection of widgets for the druid GUI framework
 
 pub mod animation;
+mod aspect_ratio_box;
 mod canvas;
 mod dropdown;
 mod dropdown_select;
@@ -33,6 +34,7 @@ mod future_widget;
 #[cfg(feature = "hot-reload")]
 pub mod hot_reload;
 
+pub use aspect_ratio_box::AspectRatioBox;
 pub use canvas::{Canvas, CanvasLayout, CanvasWrap};
 pub use dropdown::{Dropdown, DROP};
 pub use dropdown_select::DropdownSelect;
